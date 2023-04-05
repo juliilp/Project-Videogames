@@ -1,0 +1,122 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.container_detail {
+  display: flex;
+  flex-direction: column;
+}
+
+.card_detail {
+  font-family: "Poppins", sans-serif;
+  background-color: rgb(225, 225, 225);
+  padding: 0 50px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.image_detail {
+  margin-top: 50px;
+  width: 200px;
+  height: 200px;
+  border-radius: 20px;
+}
+.releasedData_detail {
+  font-size: 20px;
+  margin: 10px;
+}
+.rating_detail {
+  text-align: center;
+  margin-bottom: 10px;
+}
+.generos_detail {
+  text-align: center;
+  margin-bottom: 10px;
+}
+.platforms_detail {
+  text-align: center;
+}
+.button_detail {
+  cursor: pointer;
+  padding: 8px 40px;
+  border: none;
+  background-color: rgb(170, 170, 170);
+  border-radius: 10px;
+  margin-bottom: 20px;
+}
+
+/* Acá iria la segunda secccion  */
+
+.card_container_detail2 {
+  display: flex;
+  flex-direction: column;
+  background-color: rgb(236, 236, 236);
+  padding: 0 50px;
+}
+.name_detail {
+  font-family: "Poppins", sans-serif;
+  padding: 10px 0px;
+  letter-spacing: 1px;
+  text-align: center;
+}
+.descripcion_detail {
+  font-family: "Poppins", sans-serif;
+  text-align: center;
+}
+
+@media (min-width: 540px) {
+  .card_detail {
+    height: 50vh;
+  }
+  .card_container_detail2 {
+    height: 50vh;
+  }
+}
+
+@media (min-width: 768px) {
+  .container_descripcion_detail {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}
+
+@media (min-width: 930px) {
+  .container_detail {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-content: center;
+    align-items: stretch;
+    height: 100vh;
+  }
+  .card_detail {
+    background-color: rgb(200, 200, 200);
+    height: 100%;
+  }
+
+  .card_container_detail2 {
+    background-color: rgb(210, 210, 210);
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+  }
+
+  .container_descripcion_detail {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: auto;
+  }
+}
+
+@media (min-width: 1400px) {
+  .container_descripcion_detail {
+    padding: 0 50px;
+  }
+  .container_detail {
+    border: 10px solid red;
+  }
+}

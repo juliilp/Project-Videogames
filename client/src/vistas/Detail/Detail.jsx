@@ -32,23 +32,33 @@ const Detail = (props) => {
               <div className="card_detail">
                 <img src={vg.image} className="image_detail"></img>
 
-                <p>{vg.releasedData}</p>
-                <p>Rating: {vg.rating}</p>
-                <p>
-                  {" "}
-                  Genres:{" "}
-                  {vg.genres ? vg.genres : vg.Genres.map((g) => `${g.name} | `)}
+                <p className="releasedData_detail">{vg.releasedData}</p>
+                <p className="rating_detail">
+                  Rating <span>{vg.rating}</span>{" "}
                 </p>
-                <p> Platforms: {vg.platforms + " |   "}</p>
+                <p className="generos_detail">
+                  {" "}
+                  {vg.genres
+                    ? vg.genres.map((e) => e + " ")
+                    : vg.Genres.map((g) => `${g.name} + " "`)}
+                </p>
+                <p className="platforms_detail">
+                  {" "}
+                  {vg.platforms.map((e) => e + " " + " ")}
+                </p>
                 <br />
                 <Link to="/home">
                   <button className="button_detail">Volver</button>
                 </Link>
               </div>
               <div>
-                <div className="card_detail2">
-                  <h1>{vg.name}</h1>
-                  <p>{vg.description.replace(/<[^>]*>?/g, "")}</p>
+                <div className="card_container_detail2">
+                  <h3 className="name_detail">{vg.name}</h3>
+                  <div className="container_descripcion_detail">
+                    <p className="descripcion_detail">
+                      {vg.description.replace(/<[^>]*>?/g, "")}
+                    </p>
+                  </div>
                 </div>
               </div>
             </div>
