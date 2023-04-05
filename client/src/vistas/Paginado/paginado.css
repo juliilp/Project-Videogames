@@ -1,0 +1,12 @@
+.boton_paginado {
+  cursor: pointer;
+  padding: 7px 10px;
+  margin-left: 10px;
+  transition: transform 0.3s ease;
+  margin-bottom: 20px;
+  font-weight: 600;
+}
+
+.boton_paginado:hover {
+  transform: scale(1.05);
+}
