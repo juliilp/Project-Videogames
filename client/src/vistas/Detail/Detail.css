@@ -110,6 +110,12 @@
     align-items: center;
     height: auto;
   }
+
+  .image_detail {
+    width: 300px;
+    height: 300px;
+    margin-top: 0px;
+  }
 }
 
 @media (min-width: 1400px) {
