@@ -8,7 +8,7 @@ const Card = ({ image, name, genre, id, rating }) => {
         src={image ? image : "Image not exists"}
         alt=""
       />
-      <h3 className="card-titulo">{name ? name : "name not exists"}</h3>
+      <h4 className="card-titulo">{name ? name : "name not exists"}</h4>
       <br />
       <p className="card-genre">{genre ? genre : "Genre not exists"}</p>
       <span className="card-rating">

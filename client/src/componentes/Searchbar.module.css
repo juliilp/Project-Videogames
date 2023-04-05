@@ -1,7 +1,7 @@
 .searchbar {
+  position: relative;
   background-color: rgb(225, 225, 225);
   display: flex;
-
   height: 50px;
   justify-content: center;
   align-items: flex-start;
@@ -13,7 +13,7 @@
 
 .searchbar input {
   outline: none;
-  position: relative;
+
   border-radius: 10px;
   border: none;
   padding: 5px 20px;
@@ -34,4 +34,76 @@
 
 .searchbar input:active {
   border: none;
+}
+
+@media screen and (min-width: 430px) {
+  .searchbar svg {
+    right: 30%;
+  }
+}
+
+@media screen and (min-width: 500px) {
+  .searchbar svg {
+    right: 32%;
+  }
+}
+
+@media screen and (min-width: 550px) {
+  .searchbar svg {
+    right: 34%;
+  }
+}
+
+@media screen and (min-width: 600px) {
+  .searchbar svg {
+    right: 36%;
+  }
+}
+
+@media screen and (min-width: 700px) {
+  .searchbar svg {
+    right: 38%;
+  }
+}
+
+@media screen and (min-width: 800px) {
+  .searchbar svg {
+    right: 40%;
+  }
+}
+
+@media screen and (min-width: 950px) {
+  .searchbar svg {
+    right: 41%;
+  }
+}
+
+@media screen and (min-width: 1050px) {
+  .searchbar svg {
+    right: 42%;
+  }
+}
+
+@media screen and (min-width: 1250px) {
+  .searchbar svg {
+    right: 43%;
+  }
+}
+
+@media screen and (min-width: 1400px) {
+  .searchbar svg {
+    right: 44%;
+  }
+}
+
+@media screen and (min-width: 1650px) {
+  .searchbar svg {
+    right: 45%;
+  }
+}
+
+@media screen and (min-width: 1920px) {
+  .searchbar svg {
+    right: 45%;
+  }
 }

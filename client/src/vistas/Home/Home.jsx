@@ -63,7 +63,6 @@ const Home = () => {
     <div className="container_home">
       <div className="searchbar">
         <SearchBar />
-        <Link to="/prueba">asd</Link>
       </div>
       <div className="container_nav">
         <div className="home-navbar-label-select">
@@ -115,13 +114,11 @@ const Home = () => {
             )}
           </select>
         </div>
-        <div>
-          <Link exact to="/creategame">
-            <button className="home_button_create">
-              Create your videogame
-            </button>
-          </Link>
-        </div>
+      </div>
+      <div className="container-button-home">
+        <Link exact to="/creategame">
+          <button className="home_button_create">Create your videogame</button>
+        </Link>
       </div>
 
       <div className="container_cards">

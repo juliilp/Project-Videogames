@@ -6,12 +6,14 @@ import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import Home from "./vistas/Home/Home";
 import Detail from "./vistas/Detail/Detail";
 import CreateGame from "./vistas/CreateGame/CreateGame";
+import NotFound from "./componentes/NotFound/NotFound";
 import { Provider } from "react-redux";
 import store from "./redux/store";
 const router = createBrowserRouter([
   {
     path: "/",
     element: <Home />,
+    errorElement: <h1>Error</h1>,
   },
   {
     path: "/:id",

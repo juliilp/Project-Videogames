@@ -19,7 +19,7 @@
 }
 .container_nav {
   background-color: rgb(225, 225, 225);
-  padding: 30px 0;
+  padding: 10px 0;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -33,6 +33,7 @@
 }
 
 .home-navbar-label-select select {
+  cursor: pointer;
   text-align: center;
   padding: 5px 15px;
   border: none;
@@ -51,11 +52,17 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 375px;
+  width: 100%;
 }
 
+.container-button-home {
+  display: flex;
+  justify-content: center;
+  background-color: rgb(225, 225, 225);
+}
 .home_button_create {
-  margin-top: 10px;
+  cursor: pointer;
+  margin-bottom: 20px;
   background-color: rgb(170, 170, 170);
   letter-spacing: 2px;
   border: none;
@@ -67,4 +74,23 @@
 
 .home_button_create:hover {
   transform: scale(1.1);
+}
+
+@media (min-width: 768px) {
+  .container_nav {
+    flex-direction: row;
+    justify-content: space-evenly;
+  }
+
+  .container_cards {
+    display: grid;
+    justify-content: center;
+    grid-template-columns: 300px 300px;
+  }
+}
+
+@media (min-width: 1068px) {
+  .container_cards {
+    grid-template-columns: 300px 300px 300px;
+  }
 }
