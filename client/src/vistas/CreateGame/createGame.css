@@ -29,7 +29,7 @@ input,
 select {
   border: none;
   outline: none;
-  padding: 10px 0px;
+  padding: 10px;
   margin-bottom: 10px;
   font-weight: bold;
   letter-spacing: 2px;
@@ -74,4 +74,37 @@ textarea {
 
 .button_create:hover {
   background-color: #4b5563;
+}
+
+@media (min-width: 600px) {
+  .container_createGame {
+    justify-content: center;
+  }
+  .createForm {
+    width: 500px;
+  }
+}
+
+@media (min-width: 1000px) {
+  .createForm {
+    width: 500px;
+  }
+
+  textarea {
+    height: 350px;
+  }
+  .buttons_create {
+    height: 100%;
+    align-items: center;
+  }
+
+  .button_create {
+    padding: 10px 30px;
+  }
+}
+
+@media (min-width: 1400px) {
+  .createForm {
+    height: 90vh;
+  }
 }
