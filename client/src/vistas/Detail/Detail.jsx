@@ -47,7 +47,7 @@ const Detail = (props) => {
                   {vg.platforms.map((e) => e + " " + " ")}
                 </p>
                 <br />
-                <Link to="/home">
+                <Link to="/">
                   <button className="button_detail">Volver</button>
                 </Link>
               </div>

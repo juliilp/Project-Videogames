@@ -5,7 +5,6 @@ import { Link } from "react-router-dom";
 const CreateGame = () => {
   const dispatch = useDispatch();
   const genres = useSelector((state) => state.allGenres);
-
   useEffect(() => {
     dispatch(getAllGenres());
   }, [dispatch]);
@@ -158,17 +157,67 @@ const CreateGame = () => {
         <div className="create_genres">
           <label>Genres:</label>
           <select onChange={handleSelect}>
-            {genres.length ? (
-              genres.map((e) => {
-                return (
-                  <option value={genres.name} name={"genres"}>
-                    {e.name}
-                  </option>
-                );
-              })
-            ) : (
-              <option>Loading...</option>
-            )}
+            <option name="Action" key="Action" value="Action">
+              Action
+            </option>
+            <option name="Indie" key="Indie" value="Indie">
+              Indie
+            </option>
+            <option name="Adventure" key="Adventure" value="Adventure">
+              Adventure
+            </option>
+            <option name="RPG" key="RPG" value="RPG">
+              RPG
+            </option>
+            <option name="Strategy" key="Strategy" value="Strategy">
+              Strategy
+            </option>
+            <option name="Shooter" key="Shooter" value="Shooter">
+              Shooter
+            </option>
+            <option name="Casual" key="Casual" value="Casual">
+              Casual
+            </option>
+            <option name="Simulation" key="Simulation" value="Simulation">
+              Simulation
+            </option>
+            <option name="Puzzle" key="Puzzle" value="Puzzle">
+              Puzzle
+            </option>
+            <option name="Arcade" key="Arcade" value="Arcade">
+              Arcade
+            </option>
+            <option name="Platformer" key="Platformer" value="Platformer">
+              Platformer
+            </option>
+            <option name="Racing" key="Racing" value="Racing">
+              Racing
+            </option>
+            <option
+              name="Massively Multiplayer"
+              key="Massively Multiplayer"
+              value="Massively Multiplayer"
+            >
+              Massively Multiplayer
+            </option>
+            <option name="Fighting" key="Fighting" value="Fighting">
+              Fighting
+            </option>
+            <option name="Family" key="Family" value="Family">
+              Family
+            </option>
+            <option name="Sports" key="Sports" value="Sports">
+              Sports
+            </option>
+            <option name="Board Games" key="Board Games" value="Board Games">
+              Board Games
+            </option>
+            <option name="Educational" key="Educational" value="Educational">
+              Educational
+            </option>
+            <option name="Card" key="Card" value="Card">
+              Card
+            </option>
           </select>
         </div>
 
