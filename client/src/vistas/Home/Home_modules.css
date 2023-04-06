@@ -54,6 +54,13 @@
   align-items: center;
   width: 100%;
 }
+.loader_container {
+  box-sizing: border-box;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  height: 52vh;
+}
 
 .container-button-home {
   display: flex;
@@ -86,6 +93,10 @@
     display: grid;
     justify-content: center;
     grid-template-columns: 300px 300px;
+  }
+
+  .loader_container {
+    height: 77vh;
   }
 }
 

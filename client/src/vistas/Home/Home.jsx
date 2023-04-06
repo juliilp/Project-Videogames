@@ -121,7 +121,9 @@ const Home = () => {
         </Link>
       </div>
 
-      <div className="container_cards">
+      <div
+        className={currentGames.length ? "container_cards" : "loader_container"}
+      >
         {currentGames.length ? (
           currentGames.map((e) => {
             return (
