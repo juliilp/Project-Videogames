@@ -10,3 +10,15 @@
 .boton_paginado:hover {
   transform: scale(1.05);
 }
+
+@media (min-width: 768px) {
+  .boton_paginado {
+    margin-left: 20px;
+  }
+}
+
+@media (min-width: 1068px) {
+  .boton_paginado {
+    margin-left: 25px;
+  }
+}

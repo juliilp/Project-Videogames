@@ -26,6 +26,11 @@
   align-items: center;
 }
 
+label {
+  font-weight: 600;
+  letter-spacing: 3px;
+}
+
 .home-navbar-label-select {
   display: flex;
   flex-direction: column;
@@ -35,10 +40,12 @@
 .home-navbar-label-select select {
   cursor: pointer;
   text-align: center;
-  padding: 5px 15px;
+  padding: 5px 25px;
   border: none;
   border-radius: 10px;
   margin: 10px 0px;
+  font-weight: 400;
+  letter-spacing: 1px;
 }
 
 .home-cards-container {
@@ -71,12 +78,13 @@
   cursor: pointer;
   margin-bottom: 20px;
   background-color: rgb(170, 170, 170);
-  letter-spacing: 2px;
+  letter-spacing: 3px;
   border: none;
   border-radius: 10px;
   padding: 10px 20px;
   font-weight: 500;
   transition: 0.3s ease;
+  font-weight: 500;
 }
 
 .home_button_create:hover {
@@ -86,9 +94,8 @@
 @media (min-width: 768px) {
   .container_nav {
     flex-direction: row;
-    justify-content: space-evenly;
+    justify-content: space-around;
   }
-
   .container_cards {
     display: grid;
     justify-content: center;
