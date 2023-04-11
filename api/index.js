@@ -21,10 +21,12 @@ const server = require("./src/app.js");
 const { conn } = require("./src/db.js");
 const sequelize = require("./src/db");
 require("dotenv").config();
-const { DB_PORT } = process.env;
+const { PORT } = process.env;
+
+const port = PORT || 3001;
 // Syncing all the models at once.
 conn.sync({ force: true }).then(() => {
-  server.listen(DB_PORT, () => {
+  server.listen(PORT, () => {
     console.log("%s listening at " + DB_PORT); // eslint-disable-line no-console
   });
 });
